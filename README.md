@@ -1,5 +1,5 @@
 # Hakala2024
-This repository contains the code and data utilized in the paper:  "Subword representations successfully decode brain responses to morphologically complex written words"  by Tero Hakala, Tiina Lindh-Knuutila, Annika Hultén, Minna Lehtonen, and Riitta Salmelin Department of Neuroscience and Biomedical Engineering, Aalto University, Finland
+This repository contains the code and supplementary figures utilized in the paper:  "Subword representations successfully decode brain responses to morphologically complex written words"  by Tero Hakala, Tiina Lindh-Knuutila, Annika Hultén, Minna Lehtonen, and Riitta Salmelin Department of Neuroscience and Biomedical Engineering, Aalto University, Finland
 
 
 21.5.2024
@@ -16,6 +16,7 @@ scipy.__version__ '1.11.3'
 
 ###
 quickstart
+Download megdata from OSF: 
 
 To test whether everything works, you can try running the following command in the morppirepo/zeroshot directory.
 
@@ -46,6 +47,8 @@ The script can perform permutation shuffling either at the word level (shuffling
 ###
 
 megdata
+
+The MEG data is hosted at OSF. Download it into this folder structure to run the experiments.
 
 Evoked potentials for each word in the experiment, averaged over subjects.
 
@@ -130,7 +133,7 @@ Each directory contains the following files:
 
 Experimental stimuli
 
-The screen images of the words shown during the experiment.
+The screen images of the words shown during the experiment. Hosted at OSF.
 
 ##
 
