@@ -73,23 +73,23 @@ In this file, the stimulus onset is at point 238 from the beginning (200ms basel
 Data is split into 100ms timewindows (overlap 50ms)
 MEG datavectors used in the decoding:
 
-filename                             time window
-
-megdata_filt40_check_noresamp_1.mat  0 - 100 ms
-megdata_filt40_check_noresamp_2.mat  50 - 150
-megdata_filt40_check_noresamp_3.mat  100 - 200
-megdata_filt40_check_noresamp_4.mat  150 - 250
-megdata_filt40_check_noresamp_5.mat  200 - 300
-megdata_filt40_check_noresamp_6.mat  250 - 350
-megdata_filt40_check_noresamp_7.mat  300 - 400
-megdata_filt40_check_noresamp_8.mat  350 - 450
-megdata_filt40_check_noresamp_9.mat  400 - 500
-megdata_filt40_check_noresamp_10.mat 450 - 550
-megdata_filt40_check_noresamp_11.mat 500 - 600
-megdata_filt40_check_noresamp_12.mat 550 - 650
-megdata_filt40_check_noresamp_13.mat 600 - 700
-megdata_filt40_check_noresamp_14.mat 650 - 750
-megdata_filt40_check_noresamp_15.mat 700 - 800
+|filename|time window|
+| ------- |----------|
+|megdata_filt40_check_noresamp_1.mat| 0 - 100 ms|
+|megdata_filt40_check_noresamp_2.mat  |50 - 150|
+|megdata_filt40_check_noresamp_3.mat|  100 - 200|
+|megdata_filt40_check_noresamp_4.mat | 150 - 250|
+|megdata_filt40_check_noresamp_5.mat  |200 - 300|
+|megdata_filt40_check_noresamp_6.mat  |250 - 350|
+|megdata_filt40_check_noresamp_7.mat  |300 - 400|
+|megdata_filt40_check_noresamp_8.mat  |350 - 450|
+|megdata_filt40_check_noresamp_9.mat  |400 - 500|
+|megdata_filt40_check_noresamp_10.mat |450 - 550|
+|megdata_filt40_check_noresamp_11.mat |500 - 600|
+|megdata_filt40_check_noresamp_12.mat |550 - 650|
+|megdata_filt40_check_noresamp_13.mat |600 - 700|
+|megdata_filt40_check_noresamp_14.mat |650 - 750|
+|megdata_filt40_check_noresamp_15.mat |700 - 800|
 
 ##
 
@@ -102,25 +102,27 @@ Before running word2vec, each word in the corpus was segmented into word segment
 
 The subdirectories contain word/segment vectors for various segmentations.
 
-surface		Whole words
-unigrams 	1-grams
-bigrams 	2-grams
-trigrams 	3-grams
-morfessor 	Segmentations by Morfessor, a statistical model of morphology
-ling  		Linguistic segmentation by commercial Linsoft utility
-random 		Random segmentation
-morfessor_modified     Morfessor segmentation on modified corpus (experiment words removed from the corpus)
-ling_modified	       Linguistic segmentation on modified corpus (experiment words removed from the corpus)
+|folder name| explanation|
+|-----------| -----------|
+|surface | Whole words|
+|unigrams |  1-grams |
+|bigrams | 2-grams|
+|trigrams|  3-grams|
+|morfessor|  Segmentations by Morfessor, a statistical model of morphology|
+|ling |  Linguistic segmentation by commercial Lingsoft utility|
+|random |  Random segmentation|
+|morfessor_modified|  Morfessor segmentation on modified corpus (experiment words removed from the corpus)|
+|ling_modified|  Linguistic segmentation on modified corpus (experiment words removed from the corpus)|
 
 
 The morfessor, ling, and surface directories are further divided into w1 to w7 subdirectories. These correspond to specific skip-gram window lengths that were used to construct the vectors (e.g., w7: 7 segments before to 7 segments after the target). 
 
-Each directory contains the following files.
+Each directory contains the following files:
 
-morppisanat_170_bigrams.txt  List of segmented words (in this case, segmented into 2-grams)
-vocab.tsv	 	     List of individual segments (these come from word2vec)
-vectors.tsv		     Vectors for the segments in vocab.tsv (these come from word2vec)
-bigrams_170_w7_sum.mat 	     Complete word vectors constructed by summing corresponding segments for each word (This file is not needed anymore as the zeroshot script can also construct the word vectors from the segments)
+* morppisanat_170_bigrams.txt  List of segmented words (in this case, segmented into 2-grams)
+* vocab.tsv	 	     List of individual segments (these come from word2vec)
+* vectors.tsv		     Vectors for the segments in vocab.tsv (these come from word2vec)
+* bigrams_170_w7_sum.mat 	     Complete word vectors constructed by summing corresponding segments for each word (This file is not needed anymore as the zeroshot script can also construct the word vectors from the segments)
 
 
 
@@ -134,4 +136,4 @@ The screen images of the words shown during the experiment.
 
 supplementary
 
-Figures of containing the hierarchical clustering (complete linkage, cosine) of the different word vectors in pdf-format. 
+Figures of containing the hierarchical clustering (complete linkage, cosine) of the different word vectors in pdf format. 
