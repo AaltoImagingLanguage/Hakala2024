@@ -16,7 +16,7 @@ scipy.__version__ '1.11.3'
 
 ###
 quickstart
-Download megdata from OSF: 
+Download megdata and word vectors from OSF into their respective folders. Folder structure has been created for your convenience.
 
 To test whether everything works, you can try running the following command in the morppirepo/zeroshot directory.
 
