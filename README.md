@@ -17,7 +17,7 @@ scipy.__version__ '1.11.3'
 ###
 quickstart
 
-Download megdata and word vectors from OSF into their respective folders. Folder structure has been created for your convenience. The project data is stored at https://osf.io/2cbzw/. 
+Download megdata and word vectors from OSF into their respective folders. Folder structure has been created for your convenience. The project data is stored at https://osf.io/2cbzw/ (DOI 10.17605/OSF.IO/2CBZW).
 
 To test whether everything works, you can try running the following command in the morppirepo/zeroshot directory.
 
